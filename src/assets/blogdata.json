@@ -1,0 +1,29 @@
+[  
+  {  
+    "id": 1,  
+    "imageURL":"https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2023/2023-11/angular-logo-1200-628.png?sfvrsn=bf64b1ee_3",
+    "name": "Angular Project Setup",  
+    "details": "To start with Angular, you can follow these steps",  
+    "category": "Blog",
+    "lauched":"6/11/2023",
+    "url":"https://engineerbava.blogspot.com/2023/06/to-start-with-angular-you-can-follow.html"  
+  },  
+  {  
+    "id": 2,  
+    "name": "Getting Started With Python",
+    "imageURL":"https://1.bp.blogspot.com/-CT3wKAay1WE/XbwAVP3PQyI/AAAAAAAAAEw/4YmFemprUjIb_BK9sujcY_IPSWukmJSDQCLcBGAsYHQ/s320/Python-Logo-PNG-Image.png",  
+    "details": "You want to learn python but the question is how can I start!",  
+    "category": "Website",
+    "lauched":"1/2/2024",
+    "url":"https://engineerbava.blogspot.com/2019/11/learn-python-in-few-easy-step.html"  
+  }, 
+  {  
+    "id": 3,  
+    "name": " Insurance or Comprehensive insurance ",  
+    "imageURL":"../assets/images/todo4.png",
+    "details": "Which is best? Third-party Car Insurance or Comprehensive insurance ?",  
+    "category": "Web Application",
+    "lauched":"1/2/2021",
+    "url":"https://engineerbava.blogspot.com/2023/07/which-is-best-third-party-car-insurance.html"    
+  }
+]  

@@ -1,0 +1,49 @@
+agm-map {
+  height: 400px;
+  width: 100%;
+}
+#ex1nav{
+  background-color: #b9e1ff;
+  color: #000;
+  border-left: 4px solid #000;
+  font-weight: bold;
+}
+
+
+#greyd{
+
+  padding-top: 12px;
+}
+
+#boderlo{
+  border-left: 1px solid black;
+  padding: 0px !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  #boderlo{
+    // background: #ffffff; 
+    border-left: none !important;
+    border-bottom: 1px solid black !important;
+  }
+#aboucen{
+  text-align: center !important;
+}
+  #ex1nav, #ex2nav, #ex3nav, #ex4nav{
+    border-left:none !important;
+  }
+  #over{
+ 
+    justify-content: space-between !important;
+    }
+    
+#namework{
+  font-size: 36px;
+  font-weight: 700;
+  color: #008eff;
+  margin-top:20px;
+  margin-bottom: 10px;
+  line-height: 38px;
+}
+}

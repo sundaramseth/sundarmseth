@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col">
+      <section id="contact">
+        <div class="container" id="p30" style="padding: 150px;" >
+      
+
+          <div class="row">
+            <div class="col" id="smeamsg2" >
+              Send me a message!
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col" id="smeamsg" >
+              I’m excited to learn about your project. Ready to get started?
+            </div>
+          </div>
+
+
+          <div class="row mt-4">
+
+            <div class="col-12">
+              <!-- form fields -->
+             <div class="container p-0">
+              <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+              <div class="row">
+          
+           
+                <div class="col" id="p0px">
+                  <input type="text" class="form-control mt-3" name="Fullname" placeholder="Name" formControlName="Fullname">
+                  <input type="email"  class="form-control mt-3"   name="Email" aria-describedby="emailHelp" placeholder="Enter email" formControlName="Email">
+                  <div class="mb-3 mt-3">
+                    <textarea class="form-control" rows="3" id="comment" 
+                      placeholder="Message" formControlName="Comment" name="Comment"></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button class="button3 mt-4" type="submit" [disabled]="!FormData.valid">SHOOT MSG</button>
+                  </div>
+       
+                </div>
+             
+              </div>
+
+            </form>
+             </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>

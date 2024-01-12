@@ -1,0 +1,57 @@
+[  
+  {  
+    "id": 1,  
+    "imageURL":"../assets/images/sundaramport.png",
+    "name": "Angular Portfolio",  
+    "details": "This is angular based portfolio with sime contact form",  
+    "category": "Website",
+    "lauched":"5/5/2020",
+    "url":"https://sundaramseth-portfolio.web.app/#/"  
+  },  
+  {  
+    "id": 2,  
+    "name": "Pandit Ji Website",
+    "imageURL":"../assets/images/panditj.png",  
+    "details": "A fully django based website for local and international business.",  
+    "category": "Website",
+    "lauched":"1/2/2024",
+    "url":"http://prabhakarmaharaj.pythonanywhere.com/"  
+  }, 
+  {  
+    "id": 3,  
+    "name": "Angular Todo App",  
+    "imageURL":"../assets/images/todo4.png",
+    "details": "Build a dyanmic todo app with Drag & Drop option",  
+    "category": "Web Application",
+    "lauched":"1/2/2021",
+    "url":"https://todoapp-cloud.web.app/"    
+  },   
+  {  
+    "id": 4,  
+    "name": "Book Store Management",  
+    "imageURL":"../assets/images/bookstore.png",
+    "details": "Book Store Management by Angular With all CRUD operations.",  
+    "category": "Web Application",
+    "lauched":"2/2/2022",
+    "url":"https://crudapp-2ea68.web.app/"     
+  },  
+
+  {  
+    "id": 5,  
+    "name": "Business WebPage of Pujari",  
+    "imageURL":"../assets/images/pujari.png",
+    "details": "Single one page web app for pujari with related information",  
+    "category": "WebPage",
+    "lauched":"3/2/2022",
+    "url":"https://panditji-noida.web.app/"    
+  },
+  {  
+    "id": 6,  
+    "name": "QA Analyst Portfolio",  
+    "imageURL":"../assets/images/qaweb.png",
+    "details": "Angular based QA Analyst portfolio with creative design and contact forms",  
+    "category": "Portfolio",
+    "lauched":"5/2/2022",
+    "url":"https://pujakumari.web.app/#/"    
+  }  
+]  
