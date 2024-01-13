@@ -153,11 +153,16 @@ box-shadow: 5px 5px #d5d5d5;
 
 .hireme{
   text-align: right;
-  padding: 40px 10px;
+  margin: 25px 10px;
+  padding: 12px 15px;
   position: fixed;
   right: 20px;
   z-index: 1;
   cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #6f6f6f;
+  font-weight: 500;
+  color: #000000;
 }
 
 #hireme2{
@@ -168,11 +173,15 @@ box-shadow: 5px 5px #d5d5d5;
   padding-right: 8px;
   font-size: 16px;
   font-weight: 500;
-}
-
-#sidebaropen{
 
 }
+
+.hireme:hover{
+background: #0077d8;
+color: #ffffff !important;
+font-weight: bold;
+}
+
 
 .logo{
   font-size: 20px;
@@ -486,6 +495,7 @@ box-shadow: 5px 5px #d5d5d5;
   text-align: center;
   width: 100%;
   background: #ffffff;
+  border: 1px solid #dcdcdc;
 
 
 }
@@ -500,7 +510,19 @@ box-shadow: 5px 5px #d5d5d5;
 }
 
 .imageblogs{
-  box-shadow: 18px 18px #dfdfdf;
+
+  box-shadow: 15px 15px 0px #dfdfdf;
+  height: 90%;
+  border: 1px solid #e8e8e8;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+.imageblogs:active{
+  box-shadow: 6px 6px 0px #b3b3b3  !important;
+  transform: translateY(4px)  !important;
+  filter: hue-rotate(220deg) !important;
 }
 
 /* Set the size of the div element that contains the map */
@@ -527,26 +549,7 @@ form{
   padding: 0px 0px 40px;
 }
 
-#smeamsg{
-  text-align: center;
-  font-size: 36px;
-  font-weight: bold;
-  color: #1d1d1d;
-  padding: 20px 0px 0px;
-  line-height: 60px;
 
-
-}
-#smeamsg2{
-  text-align: center;
-  font-size: 62px;
-  font-weight: bold;
-  color: #008eff;
-  padding: 40px 0px 0px;
-  line-height: 60px;
-
-
-}
 
 #smeamsg_para{
   text-align: right;
