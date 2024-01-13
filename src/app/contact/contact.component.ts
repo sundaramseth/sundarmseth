@@ -36,7 +36,7 @@ export class ContactComponent implements OnInit {
     console.log(value);
 
     this.myForm?.add(value).then(res=>{
-      this.submmitMessage = 'You message submiited succesfully! Thank You.'
+      this.submmitMessage = 'Your message submiited succesfully! Thank You.'
       this.contactForm.reset();
     }).catch(res=>{
       console.log("error");
