@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "sundaramsethweb"
-  }
+    "default": "sundaramsethweb",
+    "main": "sundaramsethweb"
+  },
+  "targets": {},
+  "etags": {}
 }

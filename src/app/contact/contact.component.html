@@ -22,7 +22,7 @@
             <div class="col-12">
               <!-- form fields -->
              <div class="container p-0">
-              <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+              <form class="form-group" [formGroup]="contactForm" >
               <div class="row">
           
            
@@ -34,9 +34,11 @@
                       placeholder="Message" formControlName="Comment" name="Comment"></textarea>
                   </div>
                   <div class="text-center">
-                    <button class="button3 mt-4" type="submit" [disabled]="!FormData.valid">SHOOT MSG</button>
+                    <button class="button3 mt-4" type="submit" [disabled]="contactForm.invalid" (click)="submitData(contactForm.value)">SHOOT MSG</button>
                   </div>
-       
+                  <div class="mesg text-center" *ngIf="isSubmit">
+                  <p style="font-size: 18px;"> {{submmitMessage}}</p>
+                  </div>
                 </div>
              
               </div>
