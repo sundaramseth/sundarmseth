@@ -22,10 +22,14 @@
     "@angular/platform-browser": "^15.1.0",
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
+    "@types/three": "^0.163.0",
     "angularfire2": "^5.4.2",
+    "express": "^4.18.2",
     "firebase": "^10.7.1",
     "rxjs": "~7.8.0",
+    "three": "^0.163.0",
     "tslib": "^2.3.0",
+    "xmlbuilder": "^15.1.1",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {

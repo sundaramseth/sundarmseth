@@ -1,5 +1,23 @@
 [  
   {  
+    "id": 7,  
+    "imageURL":"../assets/images/weatherapp.png",
+    "name": "React Weatherapp",  
+    "details": "React.js Live Weather Detection App with moment api.",  
+    "category": "Web Application",
+    "lauched":"16/3/2024",
+    "url":"https://weatherapp-408b5.firebaseapp.com/"  
+  },
+  {  
+    "id": 8,  
+    "imageURL":"../assets/images/blogging.png",
+    "name": "Blogging Application",  
+    "details": "A fully django based blogging Website with python, html, css and javascript.",  
+    "category": "Web Application",
+    "lauched":"16/3/2024",
+    "url":"https://bloggystacker.pythonanywhere.com/"  
+  },  
+  {  
     "id": 1,  
     "imageURL":"../assets/images/sundaramport.png",
     "name": "Angular Portfolio",  
