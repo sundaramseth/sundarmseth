@@ -11,7 +11,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/comp
 export class ContactComponent implements OnInit {
 
   contactForm!: FormGroup;
-  isSubmit = true;
+  isSubmit = false;
   submmitMessage = '';
 
   public myForm: AngularFirestoreCollection<any> | undefined;
@@ -23,12 +23,12 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
 
-    this.myForm = this.fireStore.collection('user enquiry');
+    this.myForm = this.fireStore.collection('user_enquiry');
 
     this.contactForm = this.formBuilder.group({
-      Fullname: [null, [Validators.required, Validators.min(1)]],
-      Email: [null, [Validators.required, Validators.email, Validators.min(1)]],
-      Comment: [null, [Validators.required, Validators.min(1)]]
+      Fullname: [null, [Validators.required, Validators.minLength(2)]],
+      Email: [null, [Validators.required, Validators.email]],
+      Comment: [null, [Validators.required, Validators.minLength(5)]]
     })
   }
 
@@ -36,15 +36,22 @@ export class ContactComponent implements OnInit {
     console.log(value);
 
     this.myForm?.add(value).then(res=>{
-      this.submmitMessage = 'Your message submiited succesfully! Thank You.'
+      this.submmitMessage = 'Your message submitted successfully! Thank You.'
       this.contactForm.reset();
-    }).catch(res=>{
-      console.log("error");
+      this.isSubmit = true;
+      
+      setTimeout(() => {
+        this.isSubmit = false;
+      }, 5000);
+    }).catch(error=>{
+      console.log("Error details:", error);
+      console.error("Firestore error:", error.message || error);
+      this.submmitMessage = 'Error sending message. Please try again.'
+      this.isSubmit = true;
+      
+      setTimeout(() => {
+        this.isSubmit = false;
+      }, 5000);
     })
-    this.isSubmit = true;
-    
-    setTimeout(() => {
-      this.isSubmit = false;
-    }, 8000);
   }
 }

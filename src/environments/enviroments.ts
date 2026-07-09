@@ -5,7 +5,9 @@ export const environment = {
       authDomain: "sundaramsethweb.firebaseapp.com",
       databaseURL: "https://sundaramsethweb-default-rtdb.firebaseio.com",
       projectId: "sundaramsethweb",
-      storageBucket: "sundaramsethweb.appspot.com",
-      messagingSenderId: "G-SPDS94HPRD"
+      storageBucket: "sundaramsethweb.firebasestorage.app",
+      messagingSenderId: "145654408826",
+      appId: "1:145654408826:web:fbe1e0f34d8c3809ac3dc3",
+      measurementId: "G-SPDS94HPRD"
    }
   };

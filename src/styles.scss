@@ -1,4 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #0a0e27;
+  color: #e0e0e0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Bootstrap container override */
+.container {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: 1400px) {
+    max-width: 1320px;
+  }
+}
+
+/* Black Theme Variables */
+:root {
+  --primary-color: #008eff;
+  --secondary-color: #00d4ff;
+  --dark-bg: #0a0e27;
+  --darker-bg: #06080f;
+  --card-bg: #151b35;
+  --text-primary: #e0e0e0;
+  --text-secondary: #999;
+  --border-color: #1a2540;
+}
+
+/* Global Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+
+  &:hover {
+    background: var(--secondary-color);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Link styling */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--secondary-color);
+  }
+}
+
+/* Button defaults */
+button {
+  transition: all 0.3s ease;
+}
+
+/* Form controls */
+.form-control {
+  background-color: var(--card-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+
+  &:focus {
+    background-color: var(--card-bg) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 10px rgba(0, 142, 255, 0.2) !important;
+  }
+
+  &::placeholder {
+    color: var(--text-secondary) !important;
+  }
+}

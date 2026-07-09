@@ -9,6 +9,10 @@ import { HttpClient } from '@angular/common/http';
 export class ProjectsComponent implements OnInit {
   
   public projectData: any = [];
+  public paginatedProjectData: any = [];
+  public currentPage: number = 1;
+  public projectsPerPage: number = 6;
+  public totalPages: number = 1;
 
   public constructor(public http:HttpClient){
     
@@ -16,10 +20,40 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
 
     const url: string = './assets/data.json'
-    this.http.get(url).subscribe((response)=>{
+    this.http.get(url).subscribe((response: any)=>{
       this.projectData = response;
+      this.calculatePagination();
     })
   }
 
-  
+  calculatePagination() {
+    this.totalPages = Math.ceil(this.projectData.length / this.projectsPerPage);
+    this.updatePaginatedData();
+  }
+
+  updatePaginatedData() {
+    const startIndex = (this.currentPage - 1) * this.projectsPerPage;
+    const endIndex = startIndex + this.projectsPerPage;
+    this.paginatedProjectData = this.projectData.slice(startIndex, endIndex);
+  }
+
+  goToPage(page: number) {
+    if (page >= 1 && page <= this.totalPages) {
+      this.currentPage = page;
+      this.updatePaginatedData();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  nextPage() {
+    if (this.currentPage < this.totalPages) {
+      this.goToPage(this.currentPage + 1);
+    }
+  }
+
+  prevPage() {
+    if (this.currentPage > 1) {
+      this.goToPage(this.currentPage - 1);
+    }
+  }
 }

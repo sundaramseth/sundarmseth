@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "company": "Infosys",
+    "position": "Software Developer",
+    "duration": "2024 - Present",
+    "durationDetail": "Currently working",
+    "location": "India",
+    "description": "Developing and maintaining enterprise applications using modern technologies. Contributing to backend development, API design, and system architecture improvements.",
+    "details": [
+      "Building scalable backend solutions for enterprise clients",
+      "Collaborating with cross-functional teams on microservices architecture",
+      "Implementing RESTful APIs and optimizing database queries"
+    ],
+    "technology": "Python, AIML, Agentic AI & RAG, Gen AI, FastAPI, Microservices, REST APIs, SQL, AWS, Azure"
+  },
+  {
+    "id": 2,
+    "company": "Eccentric",
+    "position": "Associate Interaction Developer",
+    "duration": "September 2022 - Present",
+    "durationDetail": "2+ years",
+    "location": "Mumbai, Maharashtra, India",
+    "description": "Building a unique, dynamic & versatile platform that provides millions of people easy access to vehicle purchase gives me a sense of fulfillment. I am happy to be a small part of Eccentric's enormous vision and roadmap.",
+    "details": [
+      "Building a unique, dynamic & versatile platform for vehicle purchase",
+      "Part of Eccentric's enormous vision and roadmap"
+    ],
+    "technology": "Webgl, three.js, JavaScript, Angular, Python, html, css"
+  },
+  {
+    "id": 3,
+    "company": "Continuum",
+    "position": "HTML Developer (onsite Google)",
+    "duration": "June 2020 - September 2022",
+    "durationDetail": "2 years 4 months",
+    "location": "Gurgaon",
+    "description": "Created Dynamic Email Templates and Forms for Google Client. Developed Dynamic Emails for more than 12 Google Products.",
+    "details": [
+      "Creating Dynamic Email Templates and Forms for Google Client",
+      "Developed Dynamic Emails for 12+ Google Products: Google Pay, YouTube, Google My Business, Analytics, Google Ads, Adwords, Google Play, Adsense, Waymo, Android Developers"
+    ],
+    "technology": "HTML, Email Development"
+  },
+  {
+    "id": 4,
+    "company": "Vayam",
+    "position": "Technical Support Engineer (onsite Airtel)",
+    "duration": "October 2019 - May 2020",
+    "durationDetail": "8 months",
+    "location": "Noida, Uttar Pradesh, India",
+    "description": "Technical Engineer working onsite on Airtel Project, highly skilled in Airtel networking tools.",
+    "details": [
+      "Skilled in Airtel networking tools: Konnect, FSSAT, Unified Desktop, MyNetEx, Verint, ECMS, NT-HLR",
+      "Resolved customer issues by calling and assigning teams to nearest tower of customer location"
+    ],
+    "technology": "Networking, Technical Support"
+  },
+  {
+    "id": 5,
+    "company": "GharPeShiksha",
+    "position": "Front End Developer",
+    "duration": "June 2019 - October 2019",
+    "durationDetail": "5 months",
+    "location": "Delhi, India",
+    "description": "Internship in Front End Development. Developed company website templates, logo designing, and progressive web app for mobile users.",
+    "details": [
+      "Developed company website templates and logo designs",
+      "Created progressive web app for mobile users",
+      "Linked website from backend part and learned website development and designing",
+      "Provided ideas to CEO which were implemented successfully"
+    ],
+    "technology": "HTML, CSS, JavaScript, Web Design"
+  }
+]

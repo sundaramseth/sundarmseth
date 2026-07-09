@@ -16,7 +16,6 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from "@angular/fire/compat/auth";
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-import { ViewdComponent } from './viewd/viewd.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +23,7 @@ import { ViewdComponent } from './viewd/viewd.component';
     ClickColorDirective,
     ProjectsComponent,
     BlogsComponent,
-    ContactComponent,
-    ViewdComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -24,21 +24,34 @@
               <div class="container">
                 <div class="row">
 
-                  <div class="col-lg-4 col-md-6 col-sm-12 mt-4" *ngFor="let card of projectData">
-                    <a href="{{card.url}}" target="_blank" style="text-decoration: none; color: black;"> 
-                      <div class="card servicesText">
+                  <div class="col-lg-4 col-md-6 col-sm-12 mt-4" *ngFor="let card of paginatedProjectData">
+                    <div class="card servicesText">
                       <div id="cardimg">
-                        <img width="100%" src="{{card.imageURL}}">
+                        <img width="100%" src="{{card.imageURL}}" alt="{{card.name}}">
                       </div>
                       <div class="card-body">
                         <p class="card-title mt-3"><b>{{card.name}}</b></p>
                         <p class="card-text mt-3">{{card.details}}
-                        <p><span><b>Category</b>:{{card.category}}</span></p>
-                        <p><span><b>Launched</b>: {{card.lauched}}</span></p> 
+                        <p><span><b>Category</b>: {{card.category}}</span></p>
+                        <p><span><b>Launched</b>: {{card.lauched}}</span></p>
+                        
+                        <div class="mt-3 project-buttons" style="display: flex; gap: 10px; justify-content: center;">
+                          <a *ngIf="card.url && card.url !== '#'" href="{{card.url}}" target="_blank" class="btn btn-primary btn-sm" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                              <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.022 1.756a4.5 4.5 0 1 0 5.256-6.556.5.5 0 0 0-.646.646 3.5 3.5 0 0 1-4.239 5.45c-.169-.038-.34-.074-.51-.1a.5.5 0 0 0-.577.352z"/>
+                            </svg>
+                            Visit
+                          </a>
+                          <a *ngIf="card.github" href="{{card.github}}" target="_blank" class="btn btn-dark btn-sm" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                            Code
+                          </a>
+                        </div>
                        
                       </div>
                     </div>
-                  </a>
                    
                   </div>
                  
@@ -49,18 +62,27 @@
             </div>
           </div>
 
-
-
+          <!-- Pagination -->
+          <div class="row mt-5">
+            <div class="col text-center">
+              <nav aria-label="Page navigation">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item" [ngClass]="{ disabled: currentPage === 1 }">
+                    <button class="page-link" (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+                  </li>
+                  <li class="page-item" *ngFor="let page of [].constructor(totalPages); let i = index" [ngClass]="{ active: currentPage === i + 1 }">
+                    <button class="page-link" (click)="goToPage(i + 1)">{{ i + 1 }}</button>
+                  </li>
+                  <li class="page-item" [ngClass]="{ disabled: currentPage === totalPages }">
+                    <button class="page-link" (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+                  </li>
+                </ul>
+              </nav>
+              <p class="text-muted mt-3">Page {{ currentPage }} of {{ totalPages }}</p>
+            </div>
+          </div>
 
         </div>
-<!--         
-        <div class="row">
-          <div class="col" id="showmore">
-            <button class="button" id="showmorebtn">Show more</button>
-
-            <button class="button" id="showlessbtn">Show less</button>
-          </div>
-        </div> -->
 
         </div>
       </section>

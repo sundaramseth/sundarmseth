@@ -1,75 +1,119 @@
 [  
   {  
+    "id": 1,  
+    "imageURL":"../assets/images/rag-ai.png",
+    "name": "RAG AI Agent",  
+    "details": "An intelligent AI-powered Document Assistant built using Python, LangChain, Google Gemini, FAISS, Hugging Face Embeddings, and Streamlit. Upload PDF documents and ask natural language questions with semantic search.",  
+    "category": "AI Application",
+    "launched":"2024",
+    "url":"https://rag-ai-agentgit-chr5m2pdpc3eqcfodnuh5b.streamlit.app/",
+    "github":"https://github.com/sundaramseth/rag-ai-agent"
+  },
+  {  
+    "id": 2,  
+    "imageURL":"../assets/images/dogpt.png",
+    "name": "DOGPT - ChatGPT Clone",  
+    "details": "A ChatGPT clone application built with modern technologies. Features conversational AI, real-time messaging, and intelligent responses.",  
+    "category": "AI Application",
+    "launched":"2024",
+    "url":"https://dogpt-frontend.vercel.app/",
+    "github":"https://github.com/sundaramseth/dost-backend"
+  },
+  {  
+    "id": 12,  
+    "imageURL":"../assets/images/3dcargame.png",
+    "name": "3D Car Game Portfolio",  
+    "details": "An immersive 3D car game built with advanced graphics and interactive controls. Features realistic physics, stunning visual effects, and engaging gameplay experience.",  
+    "category": "3D Game",
+    "launched":"2024",
+    "url":"https://3dcargameportfolio.vercel.app/",
+    "github":"https://github.com/sundaramseth/3dcargameportfolio"
+  },
+  {  
+    "id": 13,  
+    "imageURL":"../assets/images/earth-simulation.png",
+    "name": "Earth Simulation",  
+    "details": "A realistic 3D Earth simulation showcasing planetary visualization, orbital mechanics, and interactive controls. Built with modern 3D graphics and real-time rendering.",  
+    "category": "3D Visualization",
+    "launched":"2024",
+    "url":"https://3dportfolio-nu.vercel.app/",
+    "github":"https://github.com/sundaramseth/3dportfolio"
+  },
+  {  
+    "id": 3,  
+    "imageURL":"../assets/images/movie-review.png",
+    "name": "Movie Review App",  
+    "details": "IMDb Clone built with React. Browse, search, and review movies with an intuitive user interface. Comprehensive movie database and rating system.",  
+    "category": "Web Application",
+    "launched":"2024",
+    "url":"https://movie-review-app-react.vercel.app/",
+    "github":"https://github.com/sundaramseth/Movie-Review-App-React"
+  },
+  {  
+    "id": 4,  
+    "imageURL":"../assets/images/coderxyz.png",
+    "name": "CoderXYZ",  
+    "details": "A vibrant social media blog website connecting developers and tech enthusiasts. Share, discuss, and discover coding insights with the community.",  
+    "category": "Social Platform",
+    "launched":"2024",
+    "url":"https://adhyatma-ce6a3.web.app/",
+    "github":"https://github.com/sundaramseth/coderxyz"
+  },
+  {  
     "id": 7,  
     "imageURL":"../assets/images/weatherapp.png",
     "name": "React Weatherapp",  
     "details": "React.js Live Weather Detection App with moment api.",  
     "category": "Web Application",
-    "lauched":"16/3/2024",
-    "url":"https://weatherapp-408b5.firebaseapp.com/"  
+    "launched":"16/3/2024",
+    "url":"https://weatherapp-408b5.firebaseapp.com/",
+    "github":"https://github.com/sundaramseth/React-Weather-App-Web"  
   },
   {  
-    "id": 8,  
-    "imageURL":"../assets/images/blogging.png",
-    "name": "Blogging Application",  
-    "details": "A fully django based blogging Website with python, html, css and javascript.",  
-    "category": "Web Application",
-    "lauched":"16/3/2024",
-    "url":"https://bloggystacker.pythonanywhere.com/"  
-  },  
-  {  
-    "id": 1,  
+    "id": 5,  
     "imageURL":"../assets/images/sundaramport.png",
     "name": "Angular Portfolio",  
-    "details": "This is angular based portfolio with sime contact form",  
+    "details": "This is angular based portfolio with simple contact form",  
     "category": "Website",
-    "lauched":"5/5/2020",
+    "launched":"5/5/2020",
     "url":"https://sundaramseth-portfolio.web.app/#/"  
   },  
   {  
-    "id": 2,  
+    "id": 6,  
     "name": "Pandit Ji Website",
     "imageURL":"../assets/images/panditj.png",  
     "details": "A fully django based website for local and international business.",  
     "category": "Website",
-    "lauched":"1/2/2024",
+    "launched":"1/2/2024",
     "url":"http://prabhakarmaharaj.pythonanywhere.com/"  
   }, 
   {  
-    "id": 3,  
+    "id": 9,  
     "name": "Angular Todo App",  
     "imageURL":"../assets/images/todo4.png",
-    "details": "Build a dyanmic todo app with Drag & Drop option",  
+    "details": "Build a dynamic todo app with Drag & Drop option",  
     "category": "Web Application",
-    "lauched":"1/2/2021",
-    "url":"https://todoapp-cloud.web.app/"    
+    "launched":"1/2/2021",
+    "url":"https://todoapp-cloud.web.app/",
+    "github":"https://github.com/sundaramseth/todoapp.github.io"    
   },   
   {  
-    "id": 4,  
+    "id": 10,  
     "name": "Book Store Management",  
     "imageURL":"../assets/images/bookstore.png",
     "details": "Book Store Management by Angular With all CRUD operations.",  
     "category": "Web Application",
-    "lauched":"2/2/2022",
-    "url":"https://crudapp-2ea68.web.app/"     
+    "launched":"2/2/2022",
+    "url":"https://crudapp-2ea68.web.app/",
+    "github":"https://github.com/sundaramseth/Crud-operation-Angular-14-and-Firestore"     
   },  
-
   {  
-    "id": 5,  
-    "name": "Business WebPage of Pujari",  
+    "id": 11,  
+    "name": "Business WebPage of Pujari",
     "imageURL":"../assets/images/pujari.png",
     "details": "Single one page web app for pujari with related information",  
     "category": "WebPage",
-    "lauched":"3/2/2022",
+    "launched":"3/2/2022",
     "url":"https://panditji-noida.web.app/"    
-  },
-  {  
-    "id": 6,  
-    "name": "QA Analyst Portfolio",  
-    "imageURL":"../assets/images/qaweb.png",
-    "details": "Angular based QA Analyst portfolio with creative design and contact forms",  
-    "category": "Portfolio",
-    "lauched":"5/2/2022",
-    "url":"https://pujakumari.web.app/#/"    
-  }  
+  }
 ]  
