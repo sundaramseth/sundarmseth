@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   skills = ['Python', 'FastAPI', 'Django / DRF', 'React', 'Angular', 'TypeScript', 'PostgreSQL', 'AI / RAG', 'LangGraph', 'Three.js / WebGL'];
   constructor(private http:HttpClient) {}
   ngOnInit():void {
-    this.http.get<any[]>('assets/experience.json').subscribe({next:items=>{this.experienceData=items;this.selectedExperienceId=items[0]?.id||1;},error:()=>{this.experienceData=[];}});
+    this.http.get<any[]>('assets/experience.json?v=20261015').subscribe({next:items=>{this.experienceData=items;this.selectedExperienceId=items[0]?.id||1;},error:()=>{this.experienceData=[];}});
   }
   selectExperience(id:number):void { this.selectedExperienceId=id; }
   tiltScene(event:PointerEvent):void {

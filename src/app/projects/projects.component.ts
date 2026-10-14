@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
   }
   ngOnInit(): void {
 
-    const url: string = './assets/data.json'
+    const url: string = './assets/data.json?v=20261015'
     this.http.get(url).subscribe((response: any)=>{
       this.projectData = response;
       this.calculatePagination();
