@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  
+
   public projectData: any = [];
   public paginatedProjectData: any = [];
   public currentPage: number = 1;
@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   public totalPages: number = 1;
 
   public constructor(public http:HttpClient){
-    
+
   }
   ngOnInit(): void {
 
@@ -41,7 +41,7 @@ export class ProjectsComponent implements OnInit {
     if (page >= 1 && page <= this.totalPages) {
       this.currentPage = page;
       this.updatePaginatedData();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.getElementById('services')?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
     }
   }
 

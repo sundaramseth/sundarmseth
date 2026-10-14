@@ -12,6 +12,7 @@ export class ContactComponent implements OnInit {
 
   contactForm!: FormGroup;
   isSubmit = false;
+  sending = false;
   submmitMessage = '';
 
   public myForm: AngularFirestoreCollection<any> | undefined;
@@ -33,22 +34,24 @@ export class ContactComponent implements OnInit {
   }
 
   submitData(value: any) {
-    console.log(value);
+    if (this.contactForm.invalid || this.sending) return;
+    this.sending = true;
 
     this.myForm?.add(value).then(res=>{
+      this.sending = false;
       this.submmitMessage = 'Your message submitted successfully! Thank You.'
       this.contactForm.reset();
       this.isSubmit = true;
-      
+
       setTimeout(() => {
         this.isSubmit = false;
       }, 5000);
     }).catch(error=>{
-      console.log("Error details:", error);
-      console.error("Firestore error:", error.message || error);
+      this.sending = false;
+
       this.submmitMessage = 'Error sending message. Please try again.'
       this.isSubmit = true;
-      
+
       setTimeout(() => {
         this.isSubmit = false;
       }, 5000);

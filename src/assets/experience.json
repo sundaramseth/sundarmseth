@@ -2,24 +2,24 @@
   {
     "id": 1,
     "company": "Infosys",
-    "position": "Software Developer",
-    "duration": "2024 - Present",
+    "position": "Consultant / Software Engineer",
+    "duration": "April 2026 \u2013 Present",
     "durationDetail": "Currently working",
-    "location": "India",
+    "location": "Pune, Maharashtra, India",
     "description": "Developing and maintaining enterprise applications using modern technologies. Contributing to backend development, API design, and system architecture improvements.",
     "details": [
-      "Building scalable backend solutions for enterprise clients",
-      "Collaborating with cross-functional teams on microservices architecture",
-      "Implementing RESTful APIs and optimizing database queries"
+      "Building Python APIs and enterprise application features.",
+      "Working with AI agent workflows, RAG and application integrations.",
+      "Collaborating on reliable backend services and data handling."
     ],
-    "technology": "Python, AIML, Agentic AI & RAG, Gen AI, FastAPI, Microservices, REST APIs, SQL, AWS, Azure"
+    "technology": "Python, FastAPI, LangGraph, RAG, REST APIs, SQL"
   },
   {
     "id": 2,
     "company": "Eccentric",
-    "position": "Associate Interaction Developer",
-    "duration": "September 2022 - Present",
-    "durationDetail": "2+ years",
+    "position": "Senior Associate Developer",
+    "duration": "September 2022 \u2013 March 2026",
+    "durationDetail": "Last working day: 13 March 2026",
     "location": "Mumbai, Maharashtra, India",
     "description": "Building a unique, dynamic & versatile platform that provides millions of people easy access to vehicle purchase gives me a sense of fulfillment. I am happy to be a small part of Eccentric's enormous vision and roadmap.",
     "details": [
@@ -30,8 +30,8 @@
   },
   {
     "id": 3,
-    "company": "Continuum",
-    "position": "HTML Developer (onsite Google)",
+    "company": "Trantor Software",
+    "position": "HTML Developer (Google vendor)",
     "duration": "June 2020 - September 2022",
     "durationDetail": "2 years 4 months",
     "location": "Gurgaon",

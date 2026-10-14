@@ -1,119 +1,146 @@
-[  
-  {  
-    "id": 1,  
-    "imageURL":"../assets/images/rag-ai.png",
-    "name": "RAG AI Agent",  
-    "details": "An intelligent AI-powered Document Assistant built using Python, LangChain, Google Gemini, FAISS, Hugging Face Embeddings, and Streamlit. Upload PDF documents and ask natural language questions with semantic search.",  
-    "category": "AI Application",
-    "launched":"2024",
-    "url":"https://rag-ai-agentgit-chr5m2pdpc3eqcfodnuh5b.streamlit.app/",
-    "github":"https://github.com/sundaramseth/rag-ai-agent"
+[
+  {
+    "id": 14,
+    "imageURL": "assets/images/project-salon.webp",
+    "name": "Glow Up Salon",
+    "details": "A salon concept website with service browsing, a gallery and WhatsApp enquiries. Available as a customizable template.",
+    "category": "Business website \u00b7 Concept demo",
+    "url": "https://glowupsaloon.vercel.app/",
+    "github": "https://github.com/sundaramseth/glow_up_saloon"
   },
-  {  
-    "id": 2,  
-    "imageURL":"../assets/images/dogpt.png",
-    "name": "DOGPT - ChatGPT Clone",  
-    "details": "A ChatGPT clone application built with modern technologies. Features conversational AI, real-time messaging, and intelligent responses.",  
-    "category": "AI Application",
-    "launched":"2024",
-    "url":"https://dogpt-frontend.vercel.app/",
-    "github":"https://github.com/sundaramseth/dost-backend"
+  {
+    "id": 15,
+    "imageURL": "assets/images/project-restaurant.webp",
+    "name": "Saffron & Smoke",
+    "details": "A restaurant concept website with signature dishes, menu navigation and reservation enquiries.",
+    "category": "Business website \u00b7 Concept demo",
+    "url": "https://saffron-and-smoke-self.vercel.app/",
+    "github": "https://github.com/sundaramsethagency/saffron-and-smoke"
   },
-  {  
-    "id": 12,  
-    "imageURL":"../assets/images/3dcargame.png",
-    "name": "3D Car Game Portfolio",  
-    "details": "An immersive 3D car game built with advanced graphics and interactive controls. Features realistic physics, stunning visual effects, and engaging gameplay experience.",  
+  {
+    "id": 16,
+    "imageURL": "assets/images/project-dental.webp",
+    "name": "SmileCraft Dental",
+    "details": "A dental clinic concept website with treatments, patient information and appointment enquiries.",
+    "category": "Business website \u00b7 Concept demo",
+    "url": "https://smilecraft-dental-studio-smoky.vercel.app/",
+    "github": "https://github.com/sundaramsethagency/smilecraft-dental-studio"
+  },
+  {
+    "id": 1,
+    "imageURL": "../assets/images/rag-ai.png",
+    "name": "RAG AI Agent",
+    "details": "An intelligent AI-powered Document Assistant built using Python, LangChain, Google Gemini, FAISS, Hugging Face Embeddings, and Streamlit. Upload PDF documents and ask natural language questions with semantic search.",
+    "category": "AI Application",
+    "launched": "2024",
+    "url": "https://rag-ai-agentgit-chr5m2pdpc3eqcfodnuh5b.streamlit.app/",
+    "github": "https://github.com/sundaramseth/rag-ai-agent"
+  },
+  {
+    "id": 2,
+    "imageURL": "../assets/images/dogpt.png",
+    "name": "DOGPT - ChatGPT Clone",
+    "details": "A ChatGPT clone application built with modern technologies. Features conversational AI, real-time messaging, and intelligent responses.",
+    "category": "AI Application",
+    "launched": "2024",
+    "url": "https://dogpt-frontend.vercel.app/",
+    "github": "https://github.com/sundaramseth/dost-backend"
+  },
+  {
+    "id": 12,
+    "imageURL": "../assets/images/3dcargame.png",
+    "name": "3D Car Game Portfolio",
+    "details": "An immersive 3D car game built with advanced graphics and interactive controls. Features realistic physics, stunning visual effects, and engaging gameplay experience.",
     "category": "3D Game",
-    "launched":"2024",
-    "url":"https://3dcargameportfolio.vercel.app/",
-    "github":"https://github.com/sundaramseth/3dcargameportfolio"
+    "launched": "2024",
+    "url": "https://3dcargameportfolio.vercel.app/",
+    "github": "https://github.com/sundaramseth/3dcargameportfolio"
   },
-  {  
-    "id": 13,  
-    "imageURL":"../assets/images/earth-simulation.png",
-    "name": "Earth Simulation",  
-    "details": "A realistic 3D Earth simulation showcasing planetary visualization, orbital mechanics, and interactive controls. Built with modern 3D graphics and real-time rendering.",  
+  {
+    "id": 13,
+    "imageURL": "../assets/images/earth-simulation.png",
+    "name": "Earth Simulation",
+    "details": "A realistic 3D Earth simulation showcasing planetary visualization, orbital mechanics, and interactive controls. Built with modern 3D graphics and real-time rendering.",
     "category": "3D Visualization",
-    "launched":"2024",
-    "url":"https://3dportfolio-nu.vercel.app/",
-    "github":"https://github.com/sundaramseth/3dportfolio"
+    "launched": "2024",
+    "url": "https://3dportfolio-nu.vercel.app/",
+    "github": "https://github.com/sundaramseth/3dportfolio"
   },
-  {  
-    "id": 3,  
-    "imageURL":"../assets/images/movie-review.png",
-    "name": "Movie Review App",  
-    "details": "IMDb Clone built with React. Browse, search, and review movies with an intuitive user interface. Comprehensive movie database and rating system.",  
+  {
+    "id": 3,
+    "imageURL": "../assets/images/movie-review.png",
+    "name": "Movie Review App",
+    "details": "IMDb Clone built with React. Browse, search, and review movies with an intuitive user interface. Comprehensive movie database and rating system.",
     "category": "Web Application",
-    "launched":"2024",
-    "url":"https://movie-review-app-react.vercel.app/",
-    "github":"https://github.com/sundaramseth/Movie-Review-App-React"
+    "launched": "2024",
+    "url": "https://movie-review-app-react.vercel.app/",
+    "github": "https://github.com/sundaramseth/Movie-Review-App-React"
   },
-  {  
-    "id": 4,  
-    "imageURL":"../assets/images/coderxyz.png",
-    "name": "CoderXYZ",  
-    "details": "A vibrant social media blog website connecting developers and tech enthusiasts. Share, discuss, and discover coding insights with the community.",  
+  {
+    "id": 4,
+    "imageURL": "../assets/images/coderxyz.png",
+    "name": "CoderXYZ",
+    "details": "A vibrant social media blog website connecting developers and tech enthusiasts. Share, discuss, and discover coding insights with the community.",
     "category": "Social Platform",
-    "launched":"2024",
-    "url":"https://adhyatma-ce6a3.web.app/",
-    "github":"https://github.com/sundaramseth/coderxyz"
+    "launched": "2024",
+    "url": "https://adhyatma-ce6a3.web.app/",
+    "github": "https://github.com/sundaramseth/coderxyz"
   },
-  {  
-    "id": 7,  
-    "imageURL":"../assets/images/weatherapp.png",
-    "name": "React Weatherapp",  
-    "details": "React.js Live Weather Detection App with moment api.",  
+  {
+    "id": 7,
+    "imageURL": "../assets/images/weatherapp.png",
+    "name": "React Weatherapp",
+    "details": "React.js Live Weather Detection App with moment api.",
     "category": "Web Application",
-    "launched":"16/3/2024",
-    "url":"https://weatherapp-408b5.firebaseapp.com/",
-    "github":"https://github.com/sundaramseth/React-Weather-App-Web"  
+    "launched": "16/3/2024",
+    "url": "https://weatherapp-408b5.firebaseapp.com/",
+    "github": "https://github.com/sundaramseth/React-Weather-App-Web"
   },
-  {  
-    "id": 5,  
-    "imageURL":"../assets/images/sundaramport.png",
-    "name": "Angular Portfolio",  
-    "details": "This is angular based portfolio with simple contact form",  
+  {
+    "id": 5,
+    "imageURL": "../assets/images/sundaramport.png",
+    "name": "Angular Portfolio",
+    "details": "This is angular based portfolio with simple contact form",
     "category": "Website",
-    "launched":"5/5/2020",
-    "url":"https://sundaramseth-portfolio.web.app/#/"  
-  },  
-  {  
-    "id": 6,  
+    "launched": "5/5/2020",
+    "url": "https://sundaramseth-portfolio.web.app/#/"
+  },
+  {
+    "id": 6,
     "name": "Pandit Ji Website",
-    "imageURL":"../assets/images/panditj.png",  
-    "details": "A fully django based website for local and international business.",  
+    "imageURL": "../assets/images/panditj.png",
+    "details": "A fully django based website for local and international business.",
     "category": "Website",
-    "launched":"1/2/2024",
-    "url":"http://prabhakarmaharaj.pythonanywhere.com/"  
-  }, 
-  {  
-    "id": 9,  
-    "name": "Angular Todo App",  
-    "imageURL":"../assets/images/todo4.png",
-    "details": "Build a dynamic todo app with Drag & Drop option",  
+    "launched": "1/2/2024",
+    "url": "http://prabhakarmaharaj.pythonanywhere.com/"
+  },
+  {
+    "id": 9,
+    "name": "Angular Todo App",
+    "imageURL": "../assets/images/todo4.png",
+    "details": "Build a dynamic todo app with Drag & Drop option",
     "category": "Web Application",
-    "launched":"1/2/2021",
-    "url":"https://todoapp-cloud.web.app/",
-    "github":"https://github.com/sundaramseth/todoapp.github.io"    
-  },   
-  {  
-    "id": 10,  
-    "name": "Book Store Management",  
-    "imageURL":"../assets/images/bookstore.png",
-    "details": "Book Store Management by Angular With all CRUD operations.",  
+    "launched": "1/2/2021",
+    "url": "https://todoapp-cloud.web.app/",
+    "github": "https://github.com/sundaramseth/todoapp.github.io"
+  },
+  {
+    "id": 10,
+    "name": "Book Store Management",
+    "imageURL": "../assets/images/bookstore.png",
+    "details": "Book Store Management by Angular With all CRUD operations.",
     "category": "Web Application",
-    "launched":"2/2/2022",
-    "url":"https://crudapp-2ea68.web.app/",
-    "github":"https://github.com/sundaramseth/Crud-operation-Angular-14-and-Firestore"     
-  },  
-  {  
-    "id": 11,  
+    "launched": "2/2/2022",
+    "url": "https://crudapp-2ea68.web.app/",
+    "github": "https://github.com/sundaramseth/Crud-operation-Angular-14-and-Firestore"
+  },
+  {
+    "id": 11,
     "name": "Business WebPage of Pujari",
-    "imageURL":"../assets/images/pujari.png",
-    "details": "Single one page web app for pujari with related information",  
+    "imageURL": "../assets/images/pujari.png",
+    "details": "Single one page web app for pujari with related information",
     "category": "WebPage",
-    "launched":"3/2/2022",
-    "url":"https://panditji-noida.web.app/"    
+    "launched": "3/2/2022",
+    "url": "https://panditji-noida.web.app/"
   }
-]  
+]

@@ -1,63 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
+@Component({selector:'app-root',templateUrl:'./app.component.html',styleUrls:['./app.component.scss']})
 export class AppComponent implements OnInit {
-  title = 'sundaram';
-  lat = 51.678418;
-  lng = 7.809007;
-
-  isShowDiv = false;  
-  isShowDivoff = false;
-  
+  title = 'Sundaram Seth';
+  currentYear = new Date().getFullYear();
   experienceData: any[] = [];
-  selectedExperienceId: number = 1;
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit(): void {
-    const url: string = './assets/experience.json'
-    this.http.get(url).subscribe((response: any)=>{
-      this.experienceData = response;
-      if (this.experienceData.length > 0) {
-        this.selectedExperienceId = this.experienceData[0].id;
-      }
-    })
+  selectedExperienceId = 1;
+  sceneX = 0;
+  sceneY = 0;
+  skills = ['Python', 'FastAPI', 'Django / DRF', 'React', 'Angular', 'TypeScript', 'PostgreSQL', 'AI / RAG', 'LangGraph', 'Three.js / WebGL'];
+  constructor(private http:HttpClient) {}
+  ngOnInit():void {
+    this.http.get<any[]>('assets/experience.json').subscribe({next:items=>{this.experienceData=items;this.selectedExperienceId=items[0]?.id||1;},error:()=>{this.experienceData=[];}});
   }
-
-  toggleDisplayDiv() {  
-
-    this.isShowDivoff = !this.isShowDivoff;
-    this.isShowDiv = false;  
-  }  
-
-  toggleDisplayDivoff(){
-
-    this.isShowDiv = true; 
-    this.isShowDivoff = !this.isShowDivoff;
+  selectExperience(id:number):void { this.selectedExperienceId=id; }
+  tiltScene(event:PointerEvent):void {
+    if(event.pointerType !== 'mouse' || window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    const box=(event.currentTarget as HTMLElement).getBoundingClientRect();
+    this.sceneX=(event.clientY-box.top)/box.height*10-5;
+    this.sceneY=(event.clientX-box.left)/box.width*14-7;
   }
-
-  selectExperience(experienceId: number) {
-    this.selectedExperienceId = experienceId;
-    // Update styling for selected item
-    this.experienceData.forEach((exp, index) => {
-      const navElement = document.getElementById('exnav-' + exp.id) as HTMLElement;
-      if (navElement) {
-        if (exp.id === experienceId) {
-          navElement.style.setProperty('background-color', '#b9e1ff');
-          navElement.style.setProperty('color', '#000000');
-          navElement.style.setProperty('border-left', '4px solid #000');
-        } else {
-          navElement.style.setProperty('background-color', '#f4f9fc');
-          navElement.style.setProperty('color', '#000000');
-          navElement.style.setProperty('border-left', '4px solid #f4f9fc');
-        }
-      }
-    });
-  }
+  resetScene():void { this.sceneX=0;this.sceneY=0; }
 }
