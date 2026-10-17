@@ -46,7 +46,8 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     this.cubeDragging = true;
     this.pointerX = event.clientX; this.pointerY = event.clientY;
     const target = event.currentTarget as HTMLElement;
-    target.focus({preventScroll:true});
+
+    if (document.activeElement === target) target.blur();
     target.setPointerCapture(event.pointerId);
   }
   dragCube(event:PointerEvent):void {
